@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 model1 = YOLO('./bottle/best.pt')
 model2 = YOLO('./hammer/best.pt')
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
     success, frame = cap.read()
